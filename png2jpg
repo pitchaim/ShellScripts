@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [[ ! -e $1 ]]; then
+	mkdir $1
+fi
+sips -s format jpeg *.png --out $1
+	

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+source=$1
+cd $source
+
+level=$2
+out_name=$3
+
+echo Animating . . .
+
+ffmpeg -framerate 50 -i Im_%02d_$level.jpg -c:v libx264 -pix_fmt yuv420p $out_name
+
+echo Animation complete, result at $out_name

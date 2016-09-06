@@ -1,5 +1,20 @@
 #!/usr/bin/env bash
 
+# Creates a 50fps animation of jpeg files from your chosen 
+# directory, whose filename ends in a number you specify, 
+# writing the result to a file with your chosen name and 
+# type extension.
+#
+# Requires bash version 3.0 and above;
+# requires ffmpeg 3.x or above
+# 
+# Copyright (c) 2016 Austin Marcus.
+# All rights reserved.
+#
+# This file is part of the ShellScripts repository, and is
+# made available under the terms of the GNU Public License
+# (see LICENSE file).
+
 source=$1
 cd $source
 

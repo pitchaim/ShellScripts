@@ -1,5 +1,19 @@
 #!/usr/bin/env bash
 
+# Converts all png files in current directory to
+# jpeg files, writing to specified folder, which is
+# created if it doesn't yet exist.
+# 
+# Requires: Mac OS with sips
+#	    bash 3.x and above
+#
+# Copyright (c) 2016 Austin Marcus.
+# All rights reserved.
+#
+# This file is part of the ShellScripts repository,
+# and is made available under the GNU Public License
+# (see LICENSE file).
+
 if [[ ! -e $1 ]]; then
 	mkdir $1
 fi

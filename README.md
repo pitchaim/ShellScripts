@@ -12,7 +12,7 @@ Designed for use with output of a modified version of a Matlab image-scrambling 
         animateDiffeo <path/to/source/directory> <number> <output_name.filetype>
 
 ###organizeIms
-Organizes images, as output from a Matlab image scrambling script, into folders by original image (i.e., consolidates versions 1-80 of Im_1 into folder named Im_1). Supports up to 99 images as-is; can be easily updated by adding a condition to line 23. Runs in bash >= 3.0. Call using the following syntax:
+Organizes images, as output from a Matlab image scrambling script, into folders by original image (i.e., consolidates versions 1-80 of Im_1 into folder named Im_1). Supports up to 99 source images as-is; can be easily updated by adding a condition to line 23. Runs in bash >= 3.0. Call using the following syntax:
 
         organizeIms <number_of_source_images>
         

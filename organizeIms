@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+COUNTER=1
+
+while [ $COUNTER -lt 89 ];
+do
+	mkdir Im_$COUNTER
+	for file in *.jpg;
+	do
+		NUMSTR=${file:3:2}
+		if [[ $NUMSTR = 0${COUNTER} ]] || [[ $NUMSTR = ${COUNTER} ]]; then
+			mv $file Im_$COUNTER
+		fi
+	done
+	let COUNTER=COUNTER+1
+done

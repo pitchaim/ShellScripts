@@ -11,6 +11,11 @@ Designed for use with output of a modified version of a Matlab image-scrambling 
 
         animateDiffeo <path/to/source/directory> <number> <output_name.filetype>
 
+###organizeIms
+Organizes images, as output from a Matlab image scrambling script, into folders by original image (i.e., consolidates versions 1-80 of Im_1 into folder named Im_1). Supports up to 99 images as-is; can be easily updated by adding a condition to line 23. Runs in bash >= 3.0. Call using the following syntax:
+
+        organizeIms <number_of_source_images>
+        
 ###png2jpg   
 Calls [sips](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/sips.1.html)
 to batch-convert png images to jpeg. Runs from current directory. Call using following syntax:
